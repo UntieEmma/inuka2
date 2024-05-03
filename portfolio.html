@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Inuka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #aa5cff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #a166ff;
+        }
+        header img {
+            max-height: 50px;
+            border: 3px solid #ffffff;
+        }
+        header h1, header h2 {
+            margin: 0;
+            animation: fadeInDown 1s ease-out;
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav {
+            background-color: #fff;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #465771;
+            padding: 10px 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #e0e0e0;
+        }
+        .hero {
+            background-color: beige;
+            padding: 100px 0;
+            text-align: center;
+            color: #333;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .testimonials {
+            background-color: beige;
+            padding: 50px 0;
+            margin-bottom: 30px;
+        }
+        .testimonial {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            position: relative;
+            z-index: 2;
+            transition: transform 0.3s;
+            border: 3px solid #aa5cff; 
+        }
+        .testimonial-content {
+            flex: 1;
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s, background-color 0.3s;
+        }
+        .testimonial:hover img {
+            transform: scale(1.1);
+        }
+        .testimonial:hover .testimonial-content {
+            border-color: #aa5cff;
+            background-color: rgba(170, 92, 255, 0.1);
+        }
+        .testimonial-content h3 {
+            color: #aa5cff;
+            margin-bottom: 10px;
+        }
+        .testimonial-content p {
+            color: #333;
+        }
+        footer {
+            background-color: #aa5cff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="images/images (2).jfif" alt="Inuka Logo">
+        <h1>Inuka-Mohlolo</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h1>Client Testimonials</h1>
+        <p>See what our clients have to say about their experience with Inuka.</p>
+    </div>
+
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonial">
+            <img src="images/download (3).jpeg" alt="Client 1">
+            <div class="testimonial-content">
+                <h3>https://www.melsinuka.co.za/posts/product-blog-4/</h3>
+                <p>"The INUKA foot file has changed my life.
+
+                    I have a little pet hate and that is my heels not looking smooth and healthy.  If my heels are a little dry or even, heavens forbid, a few cracks appear, I won’t wear open shoes.   And I do so love my flips flops in summer and even more my glitzy sling back high heel sandals.Thank you INUKA.
+                    If you are like me and love your glam shoes with open backs, then this is a must have product to take pride of place in your draw so you too can have amazing looking feet all year round to wear your favourite shoes with pride."</p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="images/IMG-20210401-WA0019-thumbnail-600x600-95.jpg" alt="client-4">
+            <div class="testimonial-content">
+                <h3>https://www.melsinuka.co.za/posts/product-blog-5/</h3>
+                <p>I love to be unique and I recently read up on blending your perfumes to create your own individual fragrance and wow, I have come up with a masterpiece.
+
+                    My little secret is that I spray INUKA Modern Me Yellow as well as INUKA Si Si fragrance to create my very own exclusive fragrance.
+                    </p>
+            </div>
+        </div>
+        <div class="testimonial">
+            <img src="images/download.jpeg" alt="Client 2">
+            <div class="testimonial-content">
+                <h3>https://www.melsinuka.co.za/posts/product-blog-9/</h3>
+                <p>"We have all purchased products hoping for a miracle and voila … INUKA truly gave us a Miracle Oil.
+
+                    I absolutely swear by this product to heal and repair my skin.
+                    
+                    I use this product for multiple purposes: As a moisturizer on my face in the evening when I’m going to bed. It works on any blemishes and dark marks I have on my face and helps to reduce fine lines and wrinkles. It can also be used on your face during the day.
+                    
+                    I use it on any marks and scars on my legs (that’s my problem area) which have been greatly improved and are barely visible now.
+                    Product Description
+                    100% Natural, pure and fragrance free. Ideal healing moisturizer for sensitive skin, acne, infant massage, chapped lips, inflammation, swelling or dry skin. Naturally anti-bacterial and non-allergenic. Does not leave a greasy residue and does not clog pores. Safe for babies. Use as an alternative to lotions and petroleum-based baby products. Contains no nut oils, sulphates, parabens, paraffin, phthalates or propylene glycol."</p>
+            </div>        <!-- Testimonials are here -->
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Inuka. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

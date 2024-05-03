@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Inuka</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #aa5cff; 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #a166ff;
+        }
+        header img {
+            max-height: 50px;
+        }
+        header h1, header h2 {
+            margin: 0;
+            animation: fadeInDown 1s ease-out;
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        nav {
+            background-color: #fff;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            background-color: #465771;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #4d638d;
+        }
+        .hero {
+            background-color: beige;
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #4b6588;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease-out;
+        }
+        .hero p {
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .featured-products {
+            background-color: #fff;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .products-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .product {
+            width: 48%;
+            background-color: bisque; 
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .product img {
+            border-radius: 5px;
+        }
+        .product-info {
+            text-align: center;
+        }
+        .product-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #aa5cff; 
+        }
+        .product-description {
+            color: #666;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #aa5cff; 
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <img src="images/images (2).jfif" alt="Inuka Logo">
+        <h1>Inuka-Mohlolo</h1>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h1>Elevate Your Beauty</h1>
+        <p>Discover a world of high-quality makeup products designed to celebrate your individuality and enhance your natural beauty. Embrace the opportunity to not only care for yourself but also profit from your passion for beauty by becoming part of our community. Join us in spreading beauty and success on your own terms.</p>
+    </div>
+</section>
+
+<section class="featured-products">
+    <div class="container products-container">
+        <div class="product">
+            <img src="images/images (4).jfif" width="350" alt="Inuka Lipstick">
+            <div class="product-info">
+                <h3 class="product-title">BEAUTY PRODUCTS</h3>
+                
+            </div>
+        </div>
+        <div class="product">
+            <img src="images/download.jfif" width="350"alt="Inuka Foundation">
+            <div class="product-info">
+                <h3 class="product-title">ODOROUS PRODUCTS</h3>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Inuka. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
